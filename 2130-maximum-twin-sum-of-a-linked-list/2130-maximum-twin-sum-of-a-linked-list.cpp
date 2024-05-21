@@ -16,7 +16,7 @@ public:
     int pairSum(ListNode* head) {
         ListNode* tortoise = head, *hare = head;
         ListNode* back = nullptr, *front = nullptr;
-        while (hare && hare->next) {
+        while (hare) {
             hare = hare->next->next;
             front = tortoise->next;
             tortoise->next = back;
